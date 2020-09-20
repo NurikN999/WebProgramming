@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+#image{
+    display: block;
+    margin: 0 auto;
+}
+#italic{
+    font-style: italic;
+}
+.copyright{
+    text-align: center;
+    font-size: 15px;
+}
