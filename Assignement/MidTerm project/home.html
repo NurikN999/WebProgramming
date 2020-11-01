@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <section>
+        <header>
+            <div class="container">
+                <div class="header-logo"><img src="images/home/logo.png" alt=""></div>
+                <div class="header-title">Home</div>
+            </div>
+        </header>
+        
+        <div class="info">
+            <div class="container">
+                <div class="info-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, numquam! Fugiat consequuntur vero voluptatibus laboriosam, deleniti fuga cupiditate incidunt error veritatis perferendis accusantium animi quidem delectus, deserunt rem sint voluptate!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, numquam! Fugiat consequuntur vero voluptatibus laboriosam, deleniti fuga cupiditate incidunt error veritatis perferendis accusantium animi quidem delectus, deserunt rem sint voluptate!</p></div>
+                <div class="info-image"><img src="images/home/camry70.jpg" alt=""></div>
+            </div>
+        </div>
+        
+        <div class="info-lc">
+            <div class="container">
+               <div class="info-image"><img src="images/home/lc200.jpg" alt=""></div>
+                <div class="info-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse accusantium vel, eligendi magni, veritatis enim quisquam ipsum consequatur exercitationem eveniet fuga voluptatum deleniti officia rem labore at, laborum sunt vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse accusantium vel, eligendi magni, veritatis enim quisquam ipsum consequatur exercitationem eveniet fuga voluptatum deleniti officia rem labore at, laborum sunt vero.</p></div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="container">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Address</a></li>
+                    </ul>
+                </div>
+                <div class="rights">Copyright © 2020 . All rights reserved.</div>
+            </div>
+        </footer>
+    </section>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+</body>
+</html>
