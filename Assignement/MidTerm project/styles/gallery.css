@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+body{
+    background-color: #000;
+    width: 100%;
+}
+header .container{
+    width: 1170px;
+    margin: 0 auto;
+}
+header .container h1{
+    color: #fff;
+    text-align: center;
+    font-family: 'Turret Road', cursive;
+    font-size: 60px;
+}
+.gallery{
+    margin-top: 50px;
+}
+.gallery img{
+    width: 100%;
+}
+.gallery .column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.gallery .column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.gallery .column img:hover {
+  opacity: 1;
+}
+.gallery .row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.gallery .container{
+    position: relative;
+    display: none;
+}
+.gallery #imgtext{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+.gallery .close{
+    position: absolute;
+    top:10px;
+    right: 15px;
+    color: #000;
+    font-size: 50px;
+    cursor: pointer;
+}
+footer{
+    margin-top: 100px;
+}
+footer .container{
+    margin: 0 auto;
+    width: 1170px;
+}
+footer .container ul{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+footer .container ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid white;
+    color: #fff;
+    padding: 10px;
+    transition: 0.5s;
+}
+footer .container ul li a:hover{
+    background: #fff;
+    transition: 0.5s;
+    color: #000;
+}
+footer .container .rights{
+    margin-top: 30px;
+}

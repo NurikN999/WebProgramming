@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/galleryscript.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gallery</h1>
+        </div>
+    </header>
+    
+    <div class="gallery">
+            <div class="row">
+                <div class="column">
+                    <img src="images/gallery/1.jpg" alt="" onclick="myFunction(this);">
+                </div>
+                
+                <div class="column">
+                    <img src="images/gallery/2.png" alt="" onclick="myFunction(this);">
+                </div>
+                
+                <div class="column">
+                    <img src="images/gallery/3.jpg" alt="" onclick="myFunction(this);">
+                </div>
+                
+                <div class="column">
+                    <img src="images/gallery/4.png" alt="" onclick="myFunction(this);">
+                </div>
+            </div>
+            <div class="container">
+                <span onclick="this.parentElement.style.display = 'none'" class="close">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+            </div>
+    </div>
+     <footer>
+            <div class="container">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="index.html">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="rights">Copyright © 2020 . All rights reserved.</div>
+            </div>
+        </footer>
+</body>
+</html>
