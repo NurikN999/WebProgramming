@@ -3,5 +3,5 @@ function reverse(){
     num1 = n.toString().split('');
     reverse = num1.reverse();
     finalResult = reverse.join('');
-    alert(parseFloat(finalResult))
+    console.log(parseFloat(finalResult))
 }
