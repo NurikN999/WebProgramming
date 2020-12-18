@@ -60,7 +60,6 @@ header ul li a{
 }
 header ul li a:hover{
     color: orange;
-    position: fixed;
 }
 .container{
     height: 128px;

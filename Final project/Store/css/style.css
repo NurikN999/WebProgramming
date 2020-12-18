@@ -60,7 +60,6 @@ header ul li a{
 }
 header ul li a:hover{
     color: orange;
-    position: fixed;
 }
 .container{
     height: 128px;
@@ -72,4 +71,159 @@ header ul li a:hover{
     display: -o-flex;
     display: flex;
     justify-content: space-between;
+}
+
+.shop{
+    width: 100%;
+    background-color: #DFD5D3;
+    height: 1100px;
+}
+.shop .container_1row{
+    height: 128px;
+    width: 1170px;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop .container_2row{
+    padding-top: 400px;
+    height: 128px;
+    width: 1170px;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    margin-top: 50px;
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background-color: #DFD5D3;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card:before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background:  black;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+.card:hover:before{
+    top: -70%;
+    transform: skewY(390deg);
+}
+.card:after{
+    content: 'Suits';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0 , 0.1);
+    font-family: 'Padauk';
+}
+.card .imgBx{
+    position: relative;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.card .imgBx img{
+    max-width: 100%;
+    transition: 0.5s;
+    
+    border-radius: 20px;
+}
+.card:hover .imgBx img{
+    max-width: 50%;
+    padding-top: 70px;
+}
+.card .contentBx{
+    position: relative;
+    padding: 20px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    font-family: 'Padauk';
+}
+.card .contentBx h3{
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.card .contentBx  .price{
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.card .contentBx .buy{
+    position: relative;
+    top: 200px;
+    padding: 10px 30px;
+    opacity: 0;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.card:hover .contentBx .buy{
+    top: 0;
+    opacity: 1;
+}
+footer{
+    font-family: 'Padauk';
+    background-color: black;
+    color: white;
+}
+footer .vertical_menu ul li{
+    margin-top: 10px;
+    margin-right: 40px;
+}
+footer .vertical_menu ul li a{
+    color: white;
+}
+footer .vertical_menu ul li a:hover{
+    color: orange;
+    transition: 0.5s;
+}
+footer .address{
+    margin-top: 10px;
+}
+footer .info{
+    margin-top: 10px;
+}
+footer .info a{
+    color: white;
+    margin-left: 40px;
 }

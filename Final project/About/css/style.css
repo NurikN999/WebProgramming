@@ -60,7 +60,6 @@ header ul li a{
 }
 header ul li a:hover{
     color: orange;
-    position: fixed;
 }
 .container{
     height: 128px;
@@ -72,4 +71,74 @@ header ul li a:hover{
     display: -o-flex;
     display: flex;
     justify-content: space-between;
+}
+
+.content{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    margin: 100px 0;
+}
+.story{
+    background-color: #fff;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Padauk';
+}
+.story_container{
+    width: 400px;
+    margin: 0 auto;
+}
+.story h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+.story span{
+    font-weight: 700;
+}
+.story p{
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.image{
+    width: 800px;
+    height: 500px;
+    background-color: #000;
+}
+.image img{
+    opacity: 0.6;
+}
+footer{
+    font-family: 'Padauk';
+    background-color: black;
+    color: white;
+}
+footer .vertical_menu ul li{
+    margin-top: 10px;
+    margin-right: 40px;
+}
+footer .vertical_menu ul li a{
+    color: white;
+}
+footer .vertical_menu ul li a:hover{
+    color: orange;
+    transition: 0.5s;
+}
+footer .address{
+    margin-top: 10px;
+}
+footer .info{
+    margin-top: 10px;
+}
+footer .info a{
+    color: white;
+    margin-left: 40px;
 }

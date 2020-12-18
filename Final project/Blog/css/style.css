@@ -31,45 +31,61 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-
-.logo img{
-    width: 150px;
-    height: 128px;
+i{
+    color: #000;
+}
+.logo-text{
+    font-size: 3.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 37px;
+}
+.logo-text span{
+    font-weight: 700;
 }
 header{
     width: 100%;
     background-color: #000;
     font-family: 'Padauk', sans-serif;
+    height: 118px;
 }
-header ul{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    margin: auto 0;
+header *{
+    color: #fff;
 }
-header ul li{
-    margin-left: 30px;
-}
-header ul li a{
-    color: white;
-    font-size: 15px;
-    transition: 0.5s;
-    text-decoration: none;
-}
-header ul li a:hover{
-    color: orange;
-    position: fixed;
-}
-.container{
-    height: 128px;
-    width: 1170px;
-    margin: 0 auto;
+header .container{
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
     justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+}
+header ul{
+    float: right;
+    border: 1px solid red;
+    list-style: none;
+    padding: 0px;
+    margin: 25px;
+}
+header ul li{
+    float: left;
+    position: relative;
+}
+header ul li ul{
+    position: absolute;
+    top: 66px;
+}
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+}
+header ul li a:hover{
+    color: darkorange;
+    transition: 0.5s;
+}
+header .menu-toggle{
+    display: none;
 }
