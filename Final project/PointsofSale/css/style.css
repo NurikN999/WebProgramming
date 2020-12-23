@@ -77,6 +77,17 @@ h6 {
   width: 150px;
   height: 128px;
 }
+
+.header-sticky {
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  z-index: 18;
+  left: 0;
+  margin-left: 0;
+  width: 100%;
+  min-width: 980px;
+}
 header {
   width: 100%;
   background-color: #000;
@@ -102,6 +113,36 @@ header ul li a {
 header ul li a:hover {
   color: orange;
 }
+
+.main-containers {
+  font: normal normal normal 15px/1.4em proxima-n-w01-reg, sans-serif;
+  margin: 0;
+  width: 24.7%;
+  height: 717px;
+  position: relative;
+  display: inline-grid;
+  margin-top: 128px;
+  text-align: center;
+  vertical-align: middle;
+  grid-gap: 0px;
+}
+.blocks {
+  margin-top: 20%;
+  margin-bottom: 0;
+  text-align: left;
+  position: relative;
+  margin-left: 29px;
+
+  /*margin: 82px 0px 10px calc((100% - 255px) * 1);
+    left: 29px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;*/
+}
+.blocks span {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
 .container {
   height: 128px;
   width: 1170px;
@@ -114,134 +155,6 @@ header ul li a:hover {
   justify-content: space-between;
 }
 
-.shop {
-  width: 100%;
-  background-color: #dfd5d3;
-  height: 1100px;
-}
-.shop .container_1row {
-  height: 128px;
-  width: 1170px;
-  margin: 0 auto;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-}
-
-.shop .container_2row {
-  padding-top: 400px;
-  height: 128px;
-  width: 1170px;
-  margin: 0 auto;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-}
-.card {
-  margin-top: 50px;
-  position: relative;
-  width: 320px;
-  height: 420px;
-  background-color: #dfd5d3;
-  border-radius: 20px;
-  overflow: hidden;
-}
-.card:before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  width: 100%;
-  height: 100%;
-  background: black;
-  transform: skewY(345deg);
-  transition: 0.5s;
-}
-.card:hover:before {
-  top: -70%;
-  transform: skewY(390deg);
-}
-.card:after {
-  content: "Suits";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-weight: 600;
-  font-size: 8em;
-  color: rgba(0, 0, 0, 0.1);
-  font-family: "Padauk";
-}
-.card .imgBx {
-  position: relative;
-  width: 100%;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-}
-.card .imgBx img {
-  max-width: 100%;
-  transition: 0.5s;
-
-  border-radius: 20px;
-}
-.card:hover .imgBx img {
-  max-width: 50%;
-  padding-top: 70px;
-}
-.card .contentBx {
-  position: relative;
-  padding: 20px;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 1;
-  font-family: "Padauk";
-}
-.card .contentBx h3 {
-  font-size: 18px;
-  color: #000;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.card .contentBx .price {
-  font-size: 24px;
-  color: #000;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-.card .contentBx .buy {
-  position: relative;
-  top: 200px;
-  padding: 10px 30px;
-  opacity: 0;
-  margin-top: 15px;
-  color: #fff;
-  text-decoration: none;
-  background-color: #000;
-  border-radius: 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: 0.5s;
-}
-.card:hover .contentBx .buy {
-  top: 0;
-  opacity: 1;
-}
 footer {
   font-family: "Padauk";
   background-color: black;
@@ -276,104 +189,7 @@ footer .info a {
   top: 0;
   left: 0;
   padding: 30px 10px;
-  z-index: 30;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.8s ease 0s;
-}
-.popup_area {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-.popup:target {
-  opacity: 1;
-  visibility: visible;
-}
-.popup_body {
-  margin-left: 30%;
-  margin-top: 50px;
-  min-height: 50%;
-  display: flex;
-  text-align: center;
-  vertical-align: top;
-  z-index: 1;
-}
-.popup:target .popup_content {
-  transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
-  opacity: 1;
-}
-.popup_content {
-  background-color: white;
-  color: black;
-  width: 600px;
-  padding: 30px;
-  z-index: 22;
-  position: relative;
-  transition: all 0.8s ease 0s;
-  opacity: 0;
-  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
-}
-.popup_close {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 20px;
-  color: rgb(38, 14, 132);
-  text-decoration: none;
-  z-index: 1;
-}
-#ul0 {
-  padding-top: 30px;
-}
-#li0 {
-  display: block;
-}
-#chsi {
-  font-size: 42px;
-  letter-spacing: 5px;
-  word-spacing: 12px;
-  font-family: "Rubik", sans-serif;
-}
-#select_language {
-  margin-top: 30px;
-  padding: 15px 60px 15px 60px;
-  width: 95%;
-  color: #515355;
-  background-color: rgba(230, 230, 230, 0.863);
-  border-width: 0;
-}
-#enter {
-  padding: 16px 35px 16px 35px;
-  margin-top: 25px;
-
-  background-color: rgb(21, 9, 126);
-  border-color: rgb(21, 9, 126);
-  border-width: 1px;
-  color: white;
-  cursor: pointer;
-  font-size: 15px;
-}
-#enter:hover {
-  background-color: rgb(17, 9, 94);
-  color: white;
-  font-size: 15px;
-}
-.body.lock {
-  overflow: hidden;
-}
-
-.popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  top: 0;
-  left: 0;
-  padding: 30px 10px;
-  z-index: 30;
+  z-index: 100;
   opacity: 0;
   visibility: hidden;
   transition: all 0.8s ease 0s;
